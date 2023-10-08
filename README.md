@@ -1,4 +1,4 @@
-# Drone Fire and Pothole Detection Repository
+# Safty drone
 
 This repository contains code and resources for a drone equipped with fire detection and pothole/object detection capabilities. The repository is organized into two main sub-folders:
 
