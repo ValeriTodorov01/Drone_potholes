@@ -4,7 +4,7 @@ This repository contains code and resources for a drone equipped with fire detec
 
 1. **fire-detection**: This folder contains the logic and code for fire detection using Python. The fire detection algorithm is designed to run on the drone's onboard computer and identify the presence of fires in the drone's surroundings.
 
-2. **pothole-and-object-detection-main**: This folder contains the logic and code for pothole and object detection using Python. The algorithm is designed to help the drone identify potholes and other objects on the ground, ensuring safe navigation and obstacle avoidance.
+2. **pothole-and-object-detection**: This folder contains the logic and code for pothole and object detection using Python. The algorithm is designed to help the drone identify potholes and other objects on the ground, ensuring safe navigation and obstacle avoidance.
 
 ## Repository Structure
 
@@ -14,22 +14,18 @@ Here's an overview of the repository's structure:  (needs to be finished)
 drone-fire-pothole-detection/
 │
 ├── fire-detection/
-│   ├── README.md
-│   ├── fire_detection.py
-│   ├── ...
+│   ├── fire.mp4               //an example video for fire
+│   ├── fire_detection.py      //the code for fire detection
+│   ├── Alarm Sound.mp3        //an alarm for signalling that fire is detected 
 │   └── data/
-│       ├── .....
-│       ├── ...
 │
-├── pothole-detection-main/
-│   ├── README.md
-│   ├── pothole_detection.py
-│   ├── object_detection.py
-│   ├── ...
-│   └── data/
-│       ├── ...
-│       ├── ...
-│       ├── ...
+├── pothole-and-object-detection/
+│   ├── pothole_coordinates/     //a folder containing imgs and txt files for found potholes
+│   ├── object_recognition/      //a folder containing the main files for the object detection AI
+│   ├── project_files/           //a folder containing the main files for the pothole detection AI
+│   ├── ..
+│   ├── ..
+│   └── training_files/
 │
 ├── LICENSE
 └── .gitignore
