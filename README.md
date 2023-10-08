@@ -4,7 +4,7 @@ This repository contains code and resources for a drone equipped with fire detec
 
 1. **fire-detection**: This folder contains the logic and code for fire detection using Python. The fire detection algorithm is designed to run on the drone's onboard computer and identify the presence of fires in the drone's surroundings.
 
-2. **pothole-detection-main**: This folder contains the logic and code for pothole and object detection using Python. The algorithm is designed to help the drone identify potholes and other objects on the ground, ensuring safe navigation and obstacle avoidance.
+2. **pothole-and-object-detection-main**: This folder contains the logic and code for pothole and object detection using Python. The algorithm is designed to help the drone identify potholes and other objects on the ground, ensuring safe navigation and obstacle avoidance.
 
 ## Repository Structure
 
