@@ -23,9 +23,14 @@ drone-fire-pothole-detection/
 │   ├── pothole_coordinates/     //a folder containing imgs and txt files for found potholes
 │   ├── object_recognition/      //a folder containing the main files for the object detection AI
 │   ├── project_files/           //a folder containing the main files for the pothole detection AI
-│   ├── ..
-│   ├── ..
-│   └── training_files/
+│   ├── training_files/
+│   ├── camera_video.py          //file for live detection from local camera or from other video source
+│   ├── image.py                 //file only for finding potholes in a given image
+│   └── (some examples for testing)
+│
+├── main.py                      //the main file that should be run
+|
+├── requirements.txt             //file with the requirements for the project
 │
 ├── LICENSE
 └── .gitignore
