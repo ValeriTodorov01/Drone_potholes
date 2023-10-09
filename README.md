@@ -38,14 +38,14 @@ To set up and use this repository, follow these steps:
 1. **Clone the Repository**: Clone this repository to your local machine using `git clone`.
 
    ```bash
-   git clone https://github.com/your-username/drone-fire-pothole-detection.git
+   git clone https://github.com/ValeriTodorov01/Drone_potholes.git
    ```
 
-2. **Fire Detection**: If you are interested in the fire detection functionality, navigate to the `fire-detection` folder, and follow the instructions provided in the README.md file within that folder.
+2. **Fire Detection**: If you are interested in the fire detection functionality, navigate to the `fire-detection` folder, and follow the instructions provided in the README.md file within that folder. (soon)
 
-3. **Pothole and Object Detection**: If you want to work with the pothole and object detection functionality, navigate to the `pothole-detection-main` folder and refer to the README.md file for detailed instructions on how to set up and use the detection capabilities.
+3. **Pothole and Object Detection**: If you want to work with the pothole and object detection functionality, navigate to the `pothole-detection-main` folder and refer to the README.md file for detailed instructions on how to set up and use the detection capabilities. (soon)
 
-4. **Data Models**: The `data` sub-folder within each detection module contains pre-trained models (e.g., `trained_model.pth` and `trained_pothole_model.pth`). These models are used by the respective detection modules for inference. You may need to download or train these models according to your requirements.
+4. **Requirements**: Navigate to requirements.txt for more info on what you need to start the project. (soon)
 
 ## License
 
