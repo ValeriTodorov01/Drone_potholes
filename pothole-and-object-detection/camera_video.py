@@ -35,7 +35,7 @@ net2.setInputSwapRB(True)
 #defining the video source (0 for camera or file name for video)
 
 #cap = cv.VideoCapture(0)
-cap = cv.VideoCapture("potholes_source.mp4")
+cap = cv.VideoCapture("DJI_0664.mp4")
 width  = cap.get(3)
 height = cap.get(4)
 
@@ -92,6 +92,7 @@ while True:
     cv.putText(frame, f'FPS: {fps}', (20, 50),
                cv.FONT_HERSHEY_COMPLEX, 0.7, (0, 255, 0), 2)
     #showing and saving result
+    cv.resize(frame, (1920, 1080))
     cv.imshow('frame', frame)
 
 
@@ -114,7 +115,7 @@ while True:
             cv.putText(img, classNames[classId - 1], (box[0], box[1] - 20), cv.FONT_HERSHEY_COMPLEX, 1,
                         (0, 255, 0), 2)
 
-        cv.imshow("Output", img)
+        #cv.imshow("Output", img)
         cv.waitKey(1)
 
 #end
