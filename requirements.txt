@@ -1,1 +1,2 @@
 Here are the requirements:
+https://www.scaler.com/topics/how-to-create-requirements-txt-python/
