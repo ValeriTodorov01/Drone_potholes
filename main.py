@@ -10,12 +10,12 @@ import threading
 
 #reading label name from obj.names file
 class_name = []
-with open(os.path.join("pothole-detection-main/project_files",'obj.names'), 'r') as f:
+with open(os.path.join("pothole-and-object-detection/project_files",'obj.names'), 'r') as f:
     class_name = [cname.strip() for cname in f.readlines()]
 
 #importing model weights and config file
 #defining the model parameters
-net1 = cv.dnn.readNet('pothole-detection-main/project_files/yolov4_tiny.weights', 'pothole-detection-main/project_files/yolov4_tiny.cfg')
+net1 = cv.dnn.readNet('pothole-and-object-detection/project_files/yolov4_tiny.weights', 'pothole-and-object-detection/project_files/yolov4_tiny.cfg')
 net1.setPreferableBackend(cv.dnn.DNN_BACKEND_CUDA)
 net1.setPreferableTarget(cv.dnn.DNN_TARGET_CUDA_FP16)
 model1 = cv.dnn_DetectionModel(net1)
@@ -23,12 +23,12 @@ model1.setInputParams(size=(640, 480), scale=1/255, swapRB=True)
 
 
 classNames_obj_detect = []
-classFile = 'pothole-detection-main/object_recognition/coco.names'
+classFile = 'pothole-and-object-detection/object_recognition/coco.names'
 with open(classFile, 'rt') as f:
     classNames = f.read().rstrip('\n').split('\n')
 
-configPath = 'pothole-detection-main/object_recognition/ssd_mobilenet_v3_large_coco_2020_01_14.pbtxt'
-weightPath = 'pothole-detection-main/object_recognition/frozen_inference_graph.pb'
+configPath = 'pothole-and-object-detection/object_recognition/ssd_mobilenet_v3_large_coco_2020_01_14.pbtxt'
+weightPath = 'pothole-and-object-detection/object_recognition/frozen_inference_graph.pb'
 
 net2 = cv.dnn_DetectionModel(weightPath, configPath)
 net2.setInputSize(320, 320)
@@ -38,7 +38,7 @@ net2.setInputSwapRB(True)
 
 #defining the video source (0 for camera or file name for video)
 #cap = cv.VideoCapture(0)
-cap = cv.VideoCapture("pothole-detection-main/potholes_source.mp4")
+cap = cv.VideoCapture("pothole-and-object-detection/DJI_0664.mp4")
 width  = cap.get(3)
 height = cap.get(4)
 
@@ -52,7 +52,7 @@ height = cap.get(4)
 #defining parameters for result saving and get coordinates
 #defining initial values for some parameters in the script
 g = geocoder.ip('me')
-result_path = "pothole-detection-main/pothole_coordinates"
+result_path = "pothole-and-object-detection/pothole_coordinates"
 starting_time = time.time()
 Conf_threshold = 0.5
 NMS_threshold = 0.4
