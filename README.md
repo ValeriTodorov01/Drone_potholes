@@ -48,7 +48,7 @@ To set up and use this repository, follow these steps:
 
 2. **Fire Detection**: If you are interested in the fire detection functionality, navigate to the `fire-detection` folder, and follow the instructions provided in the README.md file within that folder. (soon)
 
-3. **Pothole and Object Detection**: If you want to work with the pothole and object detection functionality, navigate to the `pothole-detection-main` folder and refer to the README.md file for detailed instructions on how to set up and use the detection capabilities. (soon)
+3. **Pothole and Object Detection**: If you want to work with the pothole and object detection functionality, navigate to the `pothole-and-object-detection-main` folder and refer to the README.md file for detailed instructions on how to set up and use the detection capabilities. (soon)
 
 4. **Requirements**: Navigate to requirements.txt for more info on what you need to start the project. (soon)
 
